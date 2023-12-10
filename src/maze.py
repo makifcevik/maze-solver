@@ -1,4 +1,4 @@
-from node import Node, StackFrontier, QueueFrontier
+from frontier import Node, StackFrontier, QueueFrontier
 
 
 class Maze:
