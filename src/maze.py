@@ -21,6 +21,9 @@ class Maze:
 
         self.construct_maze()
 
+    def to_list(self):
+        return [row.strip("\n").strip() for row in self.rows]
+
     def construct_maze(self):
         for i in range(self.height):
             row = []
@@ -76,6 +79,7 @@ class Maze:
             node = frontier.remove()
             self.num_of_explored += 1
 
+            # solution found
             if node.state == self.end:
                 actions = []
                 cells = []
@@ -87,7 +91,7 @@ class Maze:
                 actions.reverse()
                 cells.reverse()
                 self.solution = (actions, cells)
-                return self.solution, len(self.solution[1]), self.num_of_explored,
+                return self.solution, len(self.solution[1]), self.num_of_explored
 
             self.explored.add(node.state)
 
