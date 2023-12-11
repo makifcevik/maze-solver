@@ -64,10 +64,10 @@ class Maze:
                 continue
         return valid_actions
 
-    def solve(self):
+    def solve(self, frontier="s"):
         # Initialize the start
         start = Node(state=self.start, parent=None, action=None)
-        frontier = StackFrontier()
+        frontier = StackFrontier() if frontier == "s" else QueueFrontier()
         # frontier = QueueFrontier()
         frontier.add(start)
 
