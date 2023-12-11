@@ -1,10 +1,12 @@
 import tkinter as tk
 
+SCREEN_SIZE = 600
+
 
 class DrawMaze(tk.Frame):
     def __init__(self, master: tk.Frame, maze: list, size_x, size_y):
         super().__init__(master)
-        self.square_size = (700 // size_x, 700 // size_y)
+        self.square_size = (SCREEN_SIZE // size_x, SCREEN_SIZE // size_y)
         self.master = master
         self.master.title("Maze Solver")
         self.master.geometry(f"{size_x * self.square_size[0]}x{size_y * self.square_size[0]}")

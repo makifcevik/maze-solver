@@ -91,7 +91,7 @@ class Maze:
                 actions.reverse()
                 cells.reverse()
                 self.solution = (actions, cells)
-                return self.solution, len(self.solution[1]), self.num_of_explored
+                return self.solution, self.explored, len(self.solution[1]), self.num_of_explored
 
             self.explored.add(node.state)
 
