@@ -2,7 +2,7 @@
 
 Maze Solver is a simple Python application that finds and visualizes the solution path for a maze using depth-first or breadth-first search algorithms.
 
-<img src="./demo/maze1demo.gif" width=33%> <img src="./demo/maze2demo.gif" width=33%> <img src="./demo/maze3demo.gif" width=33%>
+<img src="./demo/maze1demo.gif" width=30%> <img src="./demo/maze2demo.gif" width=30%> <img src="./demo/maze3demo.gif" width=30%>
 
 ## Table of Contents
 - [Introduction](#introduction)
